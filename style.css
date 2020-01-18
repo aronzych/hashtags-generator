@@ -121,21 +121,21 @@ label:hover {
 }
 
 .categories__nav {
-    flex-basis: 100%;
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
     justify-content: space-around;
 }
 
 .categories__button {
+    width: 70%;
+    margin-right: 20px;
     border: none;
-    flex-basis: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25%;
-    width: 100%;
+    flex-basis: 25%;
     font-weight: bolder;
     letter-spacing: 1px;
     border-radius: 35px;
@@ -154,6 +154,50 @@ label:hover {
     margin-right: 10px;
 }
 
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.609);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__inner {
+    justify-content: space-around;
+    align-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    height: 40%;
+    background-image: linear-gradient(to right, rgb(233, 8, 166), rgb(234, 59, 0));
+}
+
+.popup__h {
+    text-align: center;
+    flex-basis: 90%;
+    font-size: 2em;
+}
+
+.popup__txt {
+    flex-basis: 90%;
+    font-size: 1.3em;
+}
+
+.popup__button {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 15px 15px;
+    flex-basis: 30%;
+    height: 20%;
+    cursor: pointer;
+}
+
+.popup__button:hover {
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
 
 
 @media (min-width:1281px) {
@@ -169,6 +213,7 @@ label:hover {
 
     .result__textarea {
         font-size: 1.3em;
+        flex-basis: 300px;
     }
 
     .result__number {
@@ -184,6 +229,10 @@ label:hover {
 
     .categories__group {
         width: 100%;
+    }
+
+    .popup__inner {
+        height: 40%;
     }
 
 }
