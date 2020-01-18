@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title># generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header__logo">#generator</h1>
+            <div class="header__lang">
+                Lang of #:
+                <input type="radio" name="lang" id="eng" value="eng" checked="true">
+                <label for="eng">ENG</label>
+
+                <input type="radio" name="lang" id="pl" value="pl">
+                <label for="pl">PL</label>
+
+                <input type="radio" name="lang" id="mix" value="mix">
+                <label for="mix">MIX</label>
+            </div>
+        </header>
+
+        <section class="categories">
+
+            <div class="categories__group">
+                <h2 class="categories__h">Poland</h2>
+                <img class="categories__img" src="img/poland.jpg">
+                <nav class="categories__nav">
+                    <button class="categories__button" ammount="1" category="poland"><i class="fas fa-plus"></i>
+                        1</button>
+                    <button class="categories__button" ammount="5" category="poland"><i class="fas fa-plus"></i>
+                        5</button>
+                    <button class="categories__button" ammount="10" category="poland"><i class="fas fa-plus"></i>
+                        10</button>
+                </nav>
+            </div>
+
+            <div class="categories__group">
+                <h2 class="categories__h">travel</h2>
+                <img class="categories__img" src="img/travel.jpg">
+                <nav class="categories__nav">
+                    <button class="categories__button" ammount="1" category="travel"><i class="fas fa-plus"></i>
+                        1</button>
+                    <button class="categories__button" ammount="5" category="travel"><i class="fas fa-plus"></i>
+                        5</button>
+                    <button class="categories__button" ammount="10" category="travel"><i class="fas fa-plus"></i>
+                        10</button>
+                </nav>
+            </div>
+
+            <div class="categories__group">
+                <h2 class="categories__h">photography</h2>
+                <img class="categories__img" src="img/photo.jpg">
+                <nav class="categories__nav">
+                    <button class="categories__button" ammount="1" category="photography"><i class="fas fa-plus"></i>
+                        1</button>
+                    <button class="categories__button" ammount="5" category="photography"><i class="fas fa-plus"></i>
+                        5</button>
+                    <button class="categories__button" ammount="10" category="photography"><i class="fas fa-plus"></i>
+                        10</button>
+                </nav>
+            </div>
+
+        </section>
+
+        <section class="result">
+            <textarea class="result__textarea" readonly value=""></textarea>
+            <button class="result__copy"><i class="far fa-copy"></i></button>
+            <button class="result__remove"><i class="fas fa-ban"></i></button>
+            <div class="result__number">Number of #: <span class="result__result">0</span></div>
+        </section>
+
+        <section class="popup popup--error">
+            <div class="popup__inner">
+                <div class="popup__h">Sorry!</div>
+                <div class="popup__txt">No more hashtags in this category in database!</div>
+                <button class="popup__button popup__button--reset">Reset</button>
+                <button class="popup__button popup__button--close">Close</button>
+            </div>
+        </section>
+
+        <section class="popup popup--copy">
+            <div class="popup__inner">
+                <div class="popup__h">Coppied!</div>
+                <button class="popup__button popup__button--close">Close</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

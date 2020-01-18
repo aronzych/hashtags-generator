@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(233, 8, 167, 0.6), rgba(234, 59, 0, 0.6));
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    order: 1;
+    width: 100%;
+}
+
+.header__logo {
+    text-align: left;
+    line-height: 2em;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.header__logo {
+    font-size: 3em;
+    }
+
+
+.header__logo:first-letter {
+    font-size: 2em;
+}
+
+.header__lang {
+font-size: 1.5em;
+text-align: center;
+}
+
+label:hover {
+    text-decoration: underline;
+}
+
+.result {
+    position: relative;
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.result__textarea {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.616);
+    flex-basis: 150px;
+}
+
+.result__number {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+
+
+.result__copy, .result__remove {
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.result__copy {
+    right: 5%;
+    bottom: 10%;
+}
+
+.result__remove {
+    right: 15%;
+    bottom: 10%;
+}
+
+.categories {
+    order: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.categories__group {
+    background-image: linear-gradient(to right, rgb(233, 8, 167), rgb(234, 57, 0));
+    position: relative;
+    margin: 10px;
+    display: flex;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.categories__h {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+.categories__img {
+    border-radius: 50% 50%;
+    margin: 30px 15px 15px 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.categories__nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.categories__button {
+    width: 70%;
+    margin-right: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border-radius: 35px;
+    color: rgb(0, 0, 0);
+    background-color:rgba(255, 255, 255, 0.6);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+}
+
+.categories__button:hover {
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
+.categories__button .fas {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.609);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__inner {
+    justify-content: space-around;
+    align-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    height: 40%;
+    background-image: linear-gradient(to right, rgb(233, 8, 166), rgb(234, 59, 0));
+}
+
+.popup__h {
+    text-align: center;
+    flex-basis: 90%;
+    font-size: 2em;
+}
+
+.popup__txt {
+    flex-basis: 90%;
+    font-size: 1.3em;
+}
+
+.popup__button {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 15px 15px;
+    flex-basis: 30%;
+    height: 20%;
+    cursor: pointer;
+}
+
+.popup__button:hover {
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
+
+
+@media (min-width:1281px) {
+
+    .container {
+        max-width: 60%;
+        margin: 0px auto 0px auto;
+    }
+
+    .result {
+        font-size: 1.3em;
+    }
+
+    .result__textarea {
+        font-size: 1.3em;
+        flex-basis: 300px;
+    }
+
+    .result__number {
+        position: absolute;
+        left: 2%;
+        bottom: 10%;
+    }
+
+    .categories {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .categories__group {
+        width: 100%;
+    }
+
+    .popup__inner {
+        height: 40%;
+    }
+
+}
