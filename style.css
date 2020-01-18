@@ -43,10 +43,6 @@ font-size: 1.5em;
 text-align: center;
 }
 
-label:hover {
-    text-decoration: underline;
-}
-
 .result {
     position: relative;
     width: 100%;
@@ -162,6 +158,7 @@ label:hover {
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 
 .popup__inner {
