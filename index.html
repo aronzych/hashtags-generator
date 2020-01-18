@@ -16,12 +16,14 @@
             <h1 class="header__logo">#generator</h1>
             <div class="header__lang">
                 Lang of #:
-                <label for="eng">ENG</label>
                 <input type="radio" name="lang" id="eng" value="eng" checked="true">
-                <label for="pl">PL</label>
+                <label for="eng">ENG</label>
+
                 <input type="radio" name="lang" id="pl" value="pl">
-                <label for="mix">MIX</label>
+                <label for="pl">PL</label>
+
                 <input type="radio" name="lang" id="mix" value="mix">
+                <label for="mix">MIX</label>
             </div>
         </header>
 
@@ -29,48 +31,66 @@
 
             <div class="categories__group">
                 <h2 class="categories__h">Poland</h2>
-                <img class="categories__img" src="https://via.placeholder.com/150">
+                <img class="categories__img" src="img/poland.jpg">
                 <nav class="categories__nav">
-                    <button class="categories__button" type="get" ammount="1" category="poland">get
-                        1</button><button class="categories__button" type="add" ammount="1" category="poland">add
+                    <button class="categories__button" type="get" ammount="1" category="poland"><i
+                            class="fas fa-sync"></i>
+                        1</button><button class="categories__button" type="add" ammount="1" category="poland"><i
+                            class="fas fa-plus"></i>
                         1</button>
-                    <button class="categories__button" type="get" ammount="5" category="poland">get
-                        5</button><button class="categories__button" type="add" ammount="5" category="poland">add
+                    <button class="categories__button" type="get" ammount="5" category="poland"><i
+                            class="fas fa-sync"></i>
+                        5</button><button class="categories__button" type="add" ammount="5" category="poland"><i
+                            class="fas fa-plus"></i>
                         5</button>
-                    <button class="categories__button" type="get" ammount="10" category="poland">get
-                        10</button><button class="categories__button" type="add" ammount="10" category="poland">add
+                    <button class="categories__button" type="get" ammount="10" category="poland"><i
+                            class="fas fa-sync"></i>
+                        10</button><button class="categories__button" type="add" ammount="10" category="poland"><i
+                            class="fas fa-plus"></i>
                         10</button>
                 </nav>
             </div>
 
             <div class="categories__group">
-                <h2 class="categories__h">Poland</h2>
-                <img class="categories__img" src="https://via.placeholder.com/150">
+                <h2 class="categories__h">Travel</h2>
+                <img class="categories__img" src="img/travel.jpg">
                 <nav class="categories__nav">
-                    <button class="categories__button" type="get" ammount="1" category="poland">get
-                        1</button><button class="categories__button" type="add" ammount="1" category="poland">add
+                    <button class="categories__button" type="get" ammount="1" category="travel"><i
+                            class="fas fa-sync"></i>
+                        1</button><button class="categories__button" type="add" ammount="1" category="travel"><i
+                            class="fas fa-plus"></i>
                         1</button>
-                    <button class="categories__button" type="get" ammount="5" category="poland">get
-                        5</button><button class="categories__button" type="add" ammount="5" category="poland">add
+                    <button class="categories__button" type="get" ammount="5" category="travel"><i
+                            class="fas fa-sync"></i>
+                        5</button><button class="categories__button" type="add" ammount="5" category="travel"><i
+                            class="fas fa-plus"></i>
                         5</button>
-                    <button class="categories__button" type="get" ammount="10" category="poland">get
-                        10</button><button class="categories__button" type="add" ammount="10" category="poland">add
+                    <button class="categories__button" type="get" ammount="10" category="travel"><i
+                            class="fas fa-sync"></i>
+                        10</button><button class="categories__button" type="add" ammount="10" category="travel"><i
+                            class="fas fa-plus"></i>
                         10</button>
                 </nav>
             </div>
 
             <div class="categories__group">
-                <h2 class="categories__h">Poland</h2>
-                <img class="categories__img" src="https://via.placeholder.com/150">
+                <h2 class="categories__h">Photography</h2>
+                <img class="categories__img" src="img/photo.jpg">
                 <nav class="categories__nav">
-                    <button class="categories__button" type="get" ammount="1" category="poland">get
-                        1</button><button class="categories__button" type="add" ammount="1" category="poland">add
+                    <button class="categories__button" type="get" ammount="1" category="photography"><i
+                            class="fas fa-sync"></i>
+                        1</button><button class="categories__button" type="add" ammount="1" category="photography"><i
+                            class="fas fa-plus"></i>
                         1</button>
-                    <button class="categories__button" type="get" ammount="5" category="poland">get
-                        5</button><button class="categories__button" type="add" ammount="5" category="poland">add
+                    <button class="categories__button" type="get" ammount="5" category="photography"><i
+                            class="fas fa-sync"></i>
+                        5</button><button class="categories__button" type="add" ammount="5" category="photography"><i
+                            class="fas fa-plus"></i>
                         5</button>
-                    <button class="categories__button" type="get" ammount="10" category="poland">get
-                        10</button><button class="categories__button" type="add" ammount="10" category="poland">add
+                    <button class="categories__button" type="get" ammount="10" category="photography"><i
+                            class="fas fa-sync"></i>
+                        10</button><button class="categories__button" type="add" ammount="10" category="photography"><i
+                            class="fas fa-plus"></i>
                         10</button>
                 </nav>
             </div>
@@ -80,6 +100,7 @@
         <section class="result">
             <textarea class="result__textarea" readonly value=""></textarea>
             <button class="result__copy"><i class="far fa-copy"></i></button>
+            <button class="result__remove"><i class="fas fa-ban"></i></button>
             <div class="result__number">Number of #: <span class="result__result">0</span></div>
 
         </section>
