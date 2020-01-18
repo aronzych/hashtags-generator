@@ -33,7 +33,7 @@ window.polandPl = [...polandPlDb];
 window.polandMix = [...polandEngDb, ...polandPlDb];
 
 window.travelEng = [...travelEngDb];
-window.travelPl = [...travelEngDb];
+window.travelPl = [...travelPlDb];
 window.travelMix = [...travelEngDb, ...travelPlDb];
 
 window.photographyEng = [...photographyEngDb];
